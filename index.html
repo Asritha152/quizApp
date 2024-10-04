@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <button class="start_btn">Start Quiz</button>
+        <div class="instructions_box">
+            <p>Instructions</p>
+            <ol class="instructions">
+                <li>You will be having <span>15 seconds </span> to answer each question </li>
+                <li>options are to selected only once</li>
+                <li>You cannot exit from the game while playing</li>
+                <li>No negative marking</li>
+                <li>When the time limit i over you can attempt that question</li>
+            </ol>
+            <div class="buttons">
+                <button class="exit_btn">Exit Quiz</button>
+                <button class="continue_btn">Continue</button>
+            </div>
+        </div>
+        <div class="question_box">
+            <div class="header">
+                <div class="timer">Time left <span>15</span></div></div>
+                <div class="ques">
+                    ${element.question}
+                </div>
+                <div class="options">
+                    <ul >
+                        <li class="option">${element.options[0]}<span class="right" >&#10003;</span></li>
+                        <li class="option">${element.options[1]}<span class="wrong">&#10005;</span></li>
+                        <li class="option">${element.options[2]}</li>
+                        <li class="option">${element.options[3]}</li>
+                    </ul></div>
+                <div class="ques_footer">
+                    <div class="question_number"><span>${questionNumber+1}</span> of <span>5</span> Questions</div>
+                    <div class="button">
+                        <button class="next_btn">Next Que</button>
+                    </div>
+                </div>
+        </div>
+        <div class="result-box">
+            <div class="crown">♕</div>
+            
+            <div class="finalstatement">Your Final score is <span>5</span> out of <span>10</span></div>
+            <div class="button">
+                <button class="replay-quiz">Replay Quiz</button>
+                <button class="exit-quiz">Exit Quiz</button>
+
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

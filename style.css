@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    background-color: blue;
+}
+.start_btn,.result-box{
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: blue;
+    background-color: white;
+    padding: 15px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: none;
+}
+.instructions_box{
+    display: none;
+    max-width: 500px;
+    border: 2px solid gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+font-size: 1.3rem;
+background-color: white;
+padding: 15px;
+border-radius: 5px;}
+.instructions_box p{
+    font-size: 2rem;
+    align-items: center;
+    border-bottom: 1px solid  gray;
+}
+.instructions{
+    padding: 5px 0px;
+    word-spacing: 4px;
+}
+.instructions li{
+    list-style-position: inside;
+}
+.instructions li span{
+    color: blue;
+    font-weight: 600;
+}
+.buttons{
+    border-top: 1px solid gray;
+    width: 100%;
+   margin-left: auto;
+}
+.exit_btn,.continue_btn{
+    padding:8px 10px;
+    border: none;
+    border-radius:5px ;
+    margin-top:5px;
+    
+}
+.exit_btn{
+    color: blue;
+    background-color: white;
+    border: 2px solid blue;
+    box-sizing: border-box;
+}
+.continue_btn{
+    background-color: blue;
+    color: white;
+border: 2px solid blue;}
+.exit_btn:hover{
+    background-color:blue;
+    color: white;
+    transition: all .5s ease-in-out;
+}
+.question_box{
+    display: none;
+    max-width: 550px;
+    border: 2px solid gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+font-size: 1.2rem;
+background-color: white;
+padding: 5px 20px;
+border-radius: 5px;
+box-sizing: border-box;
+}
+.header{
+    
+    border-bottom: 1px solid black;
+}
+.question_box .timer{
+    width: fit-content;
+    margin-left: auto;
+    font-size:1.3rem;
+    border: 2px solid rgb(175, 166, 166);
+    border-radius: 5px;
+    background-color: rgb(183, 182, 182);
+    padding: 3px;
+    margin-bottom: 1rem;
+
+}
+.timer span{
+    width: 30px;
+    height: 30px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding:  3px 5px;
+}
+.ques{
+    font-size: 1.7rem;
+    font-weight:500;
+}
+.options li{
+    list-style-type: none;
+}
+.options li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(87, 84, 84);
+    padding: .7rem;
+    border-radius: 5px;
+margin-bottom: 3px;
+background-color: rgba(120, 229, 224, 0.392);}
+.options li:hover{
+    background-color: rgba(128, 189, 193, 0.444);
+    cursor: pointer;
+}
+.disabled{
+    pointer-events: none;
+}
+.options li span{
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right{
+    border: 2px solid rgb(0, 56, 0);
+    color: darkgreen;
+}
+.wrong{
+    border: 2px solid red;
+    color: red;
+}
+.ques_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.next_btn{
+    color: white;
+    background-color: blue;
+    font-size: 1.2rem;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.question_number span{
+    font-weight: 600;
+}
+button{
+    cursor: pointer;
+}
+.result-box{
+    display: none;
+    text-align: center;
+    color: rgb(71, 70, 70);
+}
+.result-box span{
+    color: black;
+    font-weight: 500;
+}
+.result-box .crown{
+    color: orangered;
+    font-size: 3rem;
+}
+.button{
+    display: flex;
+    justify-content: space-evenly;
+}
+.result-box button {
+    font-size: 1rem;
+    padding: 7px;
+    /* color: white;
+    background-color: blue; */
+    font-weight:500;
+    border-radius: 5px;
+}
+.replay-quiz{
+    color: blue;
+    border: 2px solid blue;
+    background-color: white;
+}
+.exit-quiz{
+    color: white;
+    background-color: blue;
+    border: none;
+}
+.replay-quiz:hover{
+    color: white;
+    background-color: blue;
+}
+.replay-quiz{
+    transition: all .4s ease-in-out;
+}
+.correct{
+    background-color: rgb(0, 255, 0);
+    border: 2px solid green;
+    color: rgb(64, 226, 43);
+}
